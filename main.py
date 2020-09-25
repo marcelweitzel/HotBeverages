@@ -4,7 +4,7 @@ class HotBeverage():
     def vorbereiten(self):
         pass
     def eingiessen(self):
-        print(self.__class__.__name__, "eingiessen")
+        print(self, "eingiessen")
     def toppingHinzufuegen(self):
         pass
     def routine(self):
@@ -13,11 +13,15 @@ class HotBeverage():
         self.eingiessen()
         self.toppingHinzufuegen()
 class Kaffee(HotBeverage):
+    def __str__(self):
+        return "Kaffee"
     def vorbereiten(self):
         print("Kaffee aufbruehen")
     def toppingHinzufuegen(self):
         print("Zucker und Milch hinzufuegen")
 class Tee(HotBeverage):
+    def __str__(self):
+        return "Tee"
     def vorbereiten(self):
         print("Tee ziehen lassen")
     def toppingHinzufuegen(self):
