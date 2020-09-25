@@ -1,6 +1,6 @@
 class HotBeverage():
     def wasserKochen(self):
-        print("wasser wird gekocht")
+        print("Wasser wird gekocht")
     def vorbereiten(self):
         pass
     def eingiessen(self):
